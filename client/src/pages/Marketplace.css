@@ -1,0 +1,140 @@
+.marketplace {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.marketplace-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.marketplace-header h1 {
+  font-size: 42px;
+  color: #2F6B4F;
+  margin-bottom: 10px;
+}
+
+.marketplace-header p {
+  color: #666;
+  font-size: 18px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.search-box,
+.filter {
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box {
+  width: 320px;
+}
+
+.search-box:focus,
+.filter:focus {
+  border-color: #2F6B4F;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 15px 0 8px;
+}
+
+.product-card p {
+  color: #666;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.product-card button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #2F6B4F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #24553e;
+}
+
+.product-card strong {
+  color: #2F6B4F;
+}
+
+.details-btn {
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: white;
+  color: #2F6B4F;
+  border: 2px solid #2F6B4F;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80%;
+  font-weight: 600;
+  transition: 0.3s;
+
+}
+
+.details-btn:hover {
+  background: #2F6B4F;
+  color: white;
+}
+
+.product-card button:last-child {
+  margin-top: 10px;
+  width: 80%;
+}
+
+.swap-btn {
+  background-color: #2F6B4F;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.swap-btn:hover {
+  background-color: #24563f;
+}

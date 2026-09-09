@@ -1,0 +1,82 @@
+.swap-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.swap-container h1 {
+  text-align: center;
+  color: #2F6B4F;
+  margin-bottom: 30px;
+}
+
+.swap-card {
+  display: flex;
+  gap: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.swap-card img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.swap-details {
+  flex: 1;
+}
+
+.swap-details h2 {
+  color: #2F6B4F;
+  margin-bottom: 15px;
+}
+
+.swap-details p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.pending {
+  color: orange;
+  font-weight: bold;
+}
+
+.swap-buttons {
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background-color: #c9302c;
+}
+
+@media (max-width: 768px) {
+  .swap-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .swap-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .cancel-btn {
+    width: 100%;
+  }
+}
