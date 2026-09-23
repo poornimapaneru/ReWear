@@ -12,7 +12,7 @@ export const addClothing = async (req, res) => {
 
     const clothing = await Clothing.create({
       ...req.body,
-      image: `/uploads/${req.file.filename}`,
+      image: req.file.path,
       owner: req.user.id,
     });
 
