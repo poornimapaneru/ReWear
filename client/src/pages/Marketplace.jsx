@@ -120,7 +120,7 @@ function Marketplace() {
             <img
               src={
                 product.image
-                  ? `http://localhost:5000${product.image}`
+                  ? `${API.defaults.baseURL.replace("/api", "")}${product.image}`
                   : "https://via.placeholder.com/300x300?text=No+Image"
               }
               alt={product.title}
