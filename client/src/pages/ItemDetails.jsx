@@ -105,7 +105,7 @@ function ItemDetails() {
         <img
           src={
             product.image
-              ? `http://localhost:5000${product.image}`
+              ? product.image
               : "https://via.placeholder.com/400x400?text=No+Image"
           }
           alt={product.title}
